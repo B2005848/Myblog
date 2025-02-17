@@ -4,9 +4,9 @@
   >
     <h2 class="text-xl font-bold">Nightmare dev</h2>
     <nav class="font-semibold space-x-6">
-      <a href="">Home</a>
-      <a href="">About me</a>
-      <a href="">Arcticle</a>
+      <router-link :to="{ name: 'intro' }">Home</router-link>
+      <router-link to="">About me</router-link>
+      <router-link to="">Arcticle</router-link>
     </nav>
   </div>
 </template>
