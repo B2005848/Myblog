@@ -5,8 +5,8 @@
     <h2 class="text-xl font-bold">Nightmare dev</h2>
     <nav class="font-semibold space-x-6">
       <router-link :to="{ name: 'intro' }">Home</router-link>
-      <router-link to="">About me</router-link>
-      <router-link to="">Arcticle</router-link>
+      <router-link :to="{ name: 'aboutme' }">About me</router-link>
+      <router-link :to="{ name: 'articles' }">Articles</router-link>
     </nav>
   </div>
 </template>

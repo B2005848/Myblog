@@ -11,7 +11,7 @@
     </div>
 
     <!-- Body -->
-    <div>
+    <div class="w-full">
       <router-view></router-view>
     </div>
 
