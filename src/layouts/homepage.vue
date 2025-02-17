@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-screen bg-[url('background.jpg')] bg-cover bg-center relative flex flex-col justify-center px-12"
+    class="h-screen background bg-cover bg-center relative flex flex-col justify-center px-12"
   >
     <!-- Wrap -->
     <div class="bg-black/50 absolute inset-0 z-0" />
@@ -34,3 +34,9 @@
 <script setup>
 import NavBar from "@/components/NavBar.vue";
 </script>
+
+<style scoped>
+.background {
+  background-image: url("@/assets/background.jpg");
+}
+</style>
