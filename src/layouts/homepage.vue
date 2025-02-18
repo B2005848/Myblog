@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-screen background bg-cover bg-center relative flex flex-col justify-center px-12"
+    class="h-screen background bg-cover bg-center relative flex flex-col justify-center px-12 w-full"
   >
     <!-- Wrap -->
     <div class="bg-black/50 absolute inset-0 z-0" />
