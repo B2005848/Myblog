@@ -1,23 +1,17 @@
 <template>
-  <div
-    class="h-screen background bg-cover bg-center relative flex flex-col justify-center px-12 w-full"
-  >
-    <!-- Wrap -->
-    <div class="bg-black/50 absolute inset-0 z-0" />
+  <div class="h-screen background">
+    <!-- Layout chính -->
+    <div class="relative h-full flex flex-col">
+      <!-- Header hoặc bất kỳ phần tử nào bạn cần -->
+      <NavBar class="relative" />
 
-    <!-- Header -->
-    <div class="absolute left-0 top-0 w-full">
-      <NavBar></NavBar>
-    </div>
+      <!-- Main content (router-view) -->
+      <div class="flex-1 overflow-auto">
+        <router-view></router-view>
+      </div>
 
-    <!-- Body -->
-    <div class="w-full">
-      <router-view></router-view>
-    </div>
-
-    <!-- Footer -->
-    <div>
-      <Footer></Footer>
+      <!-- Footer -->
+      <Footer class="relative" />
     </div>
   </div>
 </template>
@@ -30,5 +24,7 @@ import Footer from "@/components/Footer.vue";
 <style scoped>
 .background {
   background-image: url("@/assets/background.jpg");
+
+  height: 100vh;
 }
 </style>
